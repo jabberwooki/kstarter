@@ -1,0 +1,63 @@
+# $Id$
+#
+# French translation of Drupal (general)
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+# Generated from file: kstarter_omega.info: n/a
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2015-02-23 19:11+0100\n"
+"PO-Revision-Date: 2015-02-23 19:11+0100\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: French <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n>1);\n"
+
+#: kstarter_omega.info:0
+msgid "Starter Omega"
+msgstr ""
+
+#: kstarter_omega.info:0
+msgid "An Omega sub-theme."
+msgstr "Un sous-thème Omega."
+
+#: kstarter_omega.info:0
+msgid "Branding"
+msgstr "Marque"
+
+#: kstarter_omega.info:0
+msgid "Header"
+msgstr "Entête"
+
+#: kstarter_omega.info:0
+msgid "Navigation"
+msgstr "Navigation"
+
+#: kstarter_omega.info:0
+msgid "Highlighted"
+msgstr "Mis en évidence"
+
+#: kstarter_omega.info:0
+msgid "Help"
+msgstr "Aide"
+
+#: kstarter_omega.info:0
+msgid "Content"
+msgstr "Contenu"
+
+#: kstarter_omega.info:0
+msgid "First Sidebar"
+msgstr "Première barre latérale"
+
+#: kstarter_omega.info:0
+msgid "Second Sidebar"
+msgstr "Seconde barre latérale"
+
+#: kstarter_omega.info:0
+msgid "Footer"
+msgstr "Pied de page"
+
