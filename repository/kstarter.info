@@ -1,0 +1,119 @@
+name = Korora Starter
+description = Install profile for a quick gettind started D7 project.
+version = 1.0
+core = 7.x
+
+;=== Settings (see profile's hook_install_tasks) ==============================
+; Timezone and Language
+-----------------------
+settings[default_timezone] = "Europe/Paris"
+settings[default_country] = "FR"
+settings[default_language] = "fr"
+settings[first_day] = 
+settings[import_translations] = 1
+
+; Admin theme
+-------------
+settings[admin_theme] = adminimal
+;settings[admin_theme] = rubik
+
+; Front theme
+-------------
+settings[default_theme] = "bartik"
+; Do not forget to activate the corresponding theme dependency in this .info file
+; and the corresponding inclusion in the drupal-org.make file.
+
+; Site
+settings[site_mail] = "admin@example.com"
+settings[site_name] = "Korora starter Site"
+settings[site_slogan] = "Korora helps you to start your project faster"
+
+; Admin account name
+settings[user1_name] = "superadmin"
+
+;=== Core =====================================================================
+dependencies[] = block
+dependencies[] = image
+dependencies[] = list
+dependencies[] = locale
+dependencies[] = menu
+dependencies[] = path
+dependencies[] = rdf
+dependencies[] = search
+dependencies[] = taxonomy
+
+;=== Contrib ==================================================================
+dependencies[] = admin_menu_toolbar
+dependencies[] = better_formats
+dependencies[] = ctools
+dependencies[] = ds
+dependencies[] = entity
+dependencies[] = features
+dependencies[] = fe_block
+dependencies[] = field_group
+dependencies[] = files_undo_remove
+dependencies[] = imce
+dependencies[] = imce_mkdir
+dependencies[] = jquery_update
+dependencies[] = l10n_update
+dependencies[] = libraries
+dependencies[] = link
+dependencies[] = linkit
+dependencies[] = options_element
+dependencies[] = role_export
+dependencies[] = strongarm
+dependencies[] = taxonomy_access_fix
+dependencies[] = token
+dependencies[] = user_settings_access
+dependencies[] = uuid
+dependencies[] = uuid_features
+dependencies[] = views
+
+;--- Optional -----------------------------------------------------------------
+; (Activate corresponding projects in file drupal-org.make)
+;dependencies[] = bean  
+;dependencies[] = block_class
+;dependencies[] = boxes
+;dependencies[] = date
+;dependencies[] = email
+;dependencies[] = entityreference
+;dependencies[] = field_collection
+;dependencies[] = filefield_sources
+;dependencies[] = migrate_extras
+;dependencies[] = views_bulk_operations
+;dependencies[] = views_slideshow
+
+; Google Analytics
+;dependencies[] = google_analytics
+;dependencies[] = google_analytics_reports
+
+; Piwik
+;dependencies[] = piwik
+;dependencies[] = piwik_reports
+
+;=== Kstarter features ========================================================
+; (Activate corresponding inclusions in file drupal-org.make)
+;dependencies[] = kpages
+;dependencies[] = kedition
+;dependencies[] = kcontextes
+;dependencies[] = kseo
+
+;--- Optional -----------------------------------------------------------------
+; (Activate corresponding inclusions in file drupal-org.make)
+;dependencies[] = kagenda
+;dependencies[] = knews
+;dependencies[] = kwa_google   ;Web analytics - Google
+;dependencies[] = kwa_piwik    ;Web analytics - Piwik
+
+;--- Themes -------------------------------------------------------------------
+; (Activate corresponding inclusions in file drupal-org.make)
+;dependencies[] = kbootstrap
+;dependencies[] = komega
+
+;--- In DEV instances only ! --------------------------------------------------
+; (Activate corresponding inclusions in file drupal-org.make)
+;dependencies[] = kdevel
+
+
+
+
