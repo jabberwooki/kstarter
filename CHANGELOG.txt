@@ -1,3 +1,7 @@
+Kstarter 1.0.1
+--------------
+- Missing directories builds and shared added.
+
 Kstarter 1.0, 2015-02-23
 ------------------------
 Korora starter profile very first version.
