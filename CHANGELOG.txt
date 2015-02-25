@@ -1,3 +1,8 @@
+Kstarter 1.0.2
+--------------
+- Features Web Stats Google and Web Stats Piwik and corresponding make files created.
+- Shell scripts and starter themes (bootstrap and omega) reorganized.
+
 Kstarter 1.0.1
 --------------
 - Missing directories builds and shared added.
