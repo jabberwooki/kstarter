@@ -4,8 +4,8 @@ core = 7.x
 ;=== Contrib modules ==========================================================
 projects[admin_menu][subdir] = contrib
 projects[better_formats][subdir] = contrib
-projects[ctools][subdir] = contrib
 projects[context][subdir] = contrib
+projects[ctools][subdir] = contrib
 projects[ds][subdir] = contrib
 projects[entity][subdir] = contrib
 projects[features][subdir] = contrib
@@ -38,29 +38,23 @@ projects[views][subdir] = contrib
 ;projects[entityreference][subdir] = contrib
 ;projects[field_collection][subdir] = contrib
 ;projects[filefield_sources][subdir] = contrib
-;projects[filefield_sources][subdir] = migrate
-;projects[filefield_sources][subdir] = migrate_extras
+;projects[migrate][subdir] = contrib
+;projects[migrate_extras][subdir] = contrib
 ;projects[views_bulk_operations][subdir] = contrib
 ;projects[views_slideshow][subdir] = contrib
 
-;projects[google_analytics][subdir] = contrib
-;projects[google_analytics_reports][subdir] = contrib
-;projects[piwik][subdir] = contrib
-;projects[piwik_reports][subdir] = contrib
-
 ;=== Kstarter features modules ================================================
-;includes[seo] = makefiles/seo.make
-;includes[edition] = makefiles/edition.make
+includes[seo] = makefiles/seo.make
 ; Feature kpages doesn't need additionnal modules.
-;includes[contextes] = makefiles/contextes.make
+includes[edition] = makefiles/edition.make
+includes[contextes] = makefiles/contextes.make
+includes[development] = makefiles/development.make
 
 ;--- Optional -----------------------------------------------------------------
+;includes[webstats_google] = makefiles/wstatsgoogle.make
+;includes[webstats_piwik] = makefiles/wstatspiwik.make
 ;includes[agenda] = makefiles/agenda.make
 ;includes[news] = makefiles/news.make
-
-;=== In DEV instances only ! ==================================================
-;includes[development] = makefiles/kdevelopment.make
-
 
 ;=== Themes ===================================================================
 ; Admin themes

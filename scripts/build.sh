@@ -35,3 +35,20 @@ then
   $UNLINK www
 fi
 $LN -s $BUILDDIR www
+
+
+# Get the name of the starter theme installed during contrib build
+CURRENTDIR=`pwd`
+starter_theme=""
+for dir in $(ls $CURRENTDIR/www/sites/all/themes/contrib)
+do
+  if [ "$dir" != "adminimal_theme" ]
+  then
+    starter_theme=$dir
+  fi
+done
+
+# Rename the chosen theme, its files and reference to its files.
+$MV themes/custom/kstarter_$starter_theme themes/custom/${NEWNAME}_theme
+$FIND themes/custom/${NEWNAME}_theme -name "kstarter*" -exec $RENAME s/kstarter/$NEWNAME/ {} \;
+$FIND themes/custom/${NEWNAME}_theme -type f -exec $SED s/starter/$NEWNAME/g -i {} \;
