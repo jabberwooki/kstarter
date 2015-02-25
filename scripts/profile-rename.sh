@@ -7,7 +7,7 @@ SED=`which sed`
 FIND=`which find`
 
 # Save current directory
-CURRENTDIR=`pwd`
+#CURRENTDIR=`pwd`
 
 # Get new profile name
 NEWNAME=$1
@@ -21,13 +21,9 @@ fi
 cd repository
 
 # Rename all profile files
-$RENAME s/starter\./$NEWNAME./ *
+$RENAME s/kstarter\./$NEWNAME./ *
 
 # Rename functions in profile files
-$SED s/starter/$NEWNAME/g -i *.install
-$SED s/starter/$NEWNAME/g -i *.profile
+$SED s/kstarter/$NEWNAME/g -i *.install
+$SED s/kstarter/$NEWNAME/g -i *.profile
 
-# Rename the given theme, its files and reference to its files.
-$MV themes/custom/starter_theme themes/custom/${NEWNAME}_theme
-$FIND themes/custom/${NEWNAME}_theme -name "*starter*" -exec $RENAME s/starter/$NEWNAME/ {} \;
-$FIND themes/custom/${NEWNAME}_theme -type f -exec $SED s/starter/$NEWNAME/g -i {} \;
