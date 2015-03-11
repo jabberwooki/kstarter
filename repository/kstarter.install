@@ -66,13 +66,15 @@ function kstarter_install_tasks(&$install_state) {
  * context manage them.
  */
 function _kstarter_install_theme() {
+  $settings = _mda_get_settings();
+  
   // Set default theme.
-  theme_disable(array('garland', 'seven', 'stark'));
-  theme_enable(array('bartik'));
+  $theme_name = $settings['default_theme'];
+  theme_disable(array('bartik','garland', 'seven', 'stark'));
+  theme_enable(array($theme_name));
   variable_set('theme_default', $theme_name);
 
   // Set admin theme.
-  $settings = _kstarter_get_settings();
   $admin_theme_name = $settings['admin_theme'];
   theme_enable(array($admin_theme_name));
   variable_set('admin_theme', $admin_theme_name);
@@ -133,12 +135,22 @@ function _kstarter_install_locale(&$install_state) {
     return;
   }
 
-  // Download french translations by using the l10n_update module batch.
+  // Download french translations by using the l10n_update module batch.  
   module_enable(array('l10n_update'));
-  module_load_include('inc', 'l10n_update', 'l10n_update.check');
-  l10n_update_language_refresh(array($settings['default_language']));
+  module_load_include('fetch.inc', 'l10n_update');
+
   $batch = batch_get();
-  // Disable l10n_update at the end of the process for performance reasons.
+
+  // Builds a batch definition to check, download and import project translations. 
+  // (see function l10n_update_batch_update_build() in l10n_update.fetch.inc file, line 29)
+  $langcodes = array($settings['default_language']);
+  $options = _l10n_update_default_update_options();
+  $translations_batch_definition = l10n_update_batch_update_build(array(), $langcodes, $options);
+  // We just need the 'operations' key contained in $translations_batch array
+  // Next line currently commented due to bug during translations download/import.
+  // $batch['operations'][] = $translations_batch_definition['operations'];
+  
+  // And we add the l10n_update module disabling operation to the batch for performance reasons.
   $batch['operations'][] = array('module_disable', array(array('l10n_update')));
 
   return $batch;

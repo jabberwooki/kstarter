@@ -1,5 +1,4 @@
-#!/bin/sh
-
+#!/bin/bash
 # Prepare needed commands
 MV=`which mv`
 RENAME=`which rename`
@@ -26,4 +25,11 @@ $RENAME s/kstarter\./$NEWNAME./ *
 # Rename functions in profile files
 $SED s/kstarter/$NEWNAME/g -i *.install
 $SED s/kstarter/$NEWNAME/g -i *.profile
+
+# Change the default profile name and profile description values in profile's .info file.
+$FIND ${NEWNAME}.info -exec $SED s/"Korora Starter"/${NEWNAME^}/g -i {} \;
+$FIND ${NEWNAME}.info -exec $SED s/"a quick gettind started D7"/"the ${NEWNAME^}"/g -i {} \;
+
+# Rename translation files
+$RENAME s/kstarter\./$NEWNAME./ translations/*.po
 

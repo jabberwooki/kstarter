@@ -1,3 +1,9 @@
+Kstarter 1.0.3 - 2015-03-11
+---------------------------
+- Shell scripts reorganized. Profile and theme renaming process returned back
+to using both profile-rename.sh and theme-rename.sh scripts.
+- Modifications in .info and .install profile files.
+
 Kstarter 1.0.2
 --------------
 - Features Web Stats Google and Web Stats Piwik and corresponding make files created.
