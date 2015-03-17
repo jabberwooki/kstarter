@@ -43,15 +43,15 @@ The vhost must be set on the /your/desired/location/<your-project>/www directory
 cd /your/desired/location/<your-project>/www
 
 10) Create the database
-drush sql-create --db-su=<sql-root-name> --db-su-pw=<sql-root-password> --db-url="mysql://<db-username>:<db-password>@localhost/<dbname>
+drush sql-create --db-su=<sql-root-name> --db-su-pw=<sql-root-password> --db-url="mysql://<db-username>:<db-password>@localhost/<dbname>"
 
 11) Launch the install process
 - using drush : 
-drush site-install <your-profile> --db-url="mysql://<db-username>:<db-password>@localhost/<dbname>
+drush site-install <your-profile> --db-url="mysql://<db-username>:<db-password>@localhost/<dbname>"
 - or in your preferred browser at :
 http://<your-vhost>/install.php
 
-12) Copy the settings.php file generated during install in the shared folder.
+12) IMPORTANT! Copy the settings.php file generated during install in the shared folder.
 
 13) Enjoy developing !
 
