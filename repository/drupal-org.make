@@ -79,6 +79,7 @@ projects[views][version] = "3.10"
 
 ;=== Modules - optional =======================================================
 ;projects[bean][subdir] = contrib
+;projects[bean][version] = "1.9"
 
 ;projects[block_class][subdir] = contrib
 ;projects[block_class][version] = "2.1"
