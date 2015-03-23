@@ -30,6 +30,9 @@ $SED s/kstarter/$NEWNAME/g -i *.profile
 $FIND ${NEWNAME}.info -exec $SED s/"Korora Starter"/${NEWNAME^}/g -i {} \;
 $FIND ${NEWNAME}.info -exec $SED s/"a quick gettind started D7"/"the ${NEWNAME^}"/g -i {} \;
 
+# Modify the project path in features .info files.
+$FIND modules/features -mindepth 2 -maxdepth 2 -name "*.info" -exec $SED s/kstarter/${NEWNAME}/g -i {} \;
+
 # Rename translation files
 $RENAME s/kstarter\./$NEWNAME./ translations/*.po
 
