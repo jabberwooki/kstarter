@@ -94,15 +94,17 @@ dependencies[] = kcontextes
 
 ;--- Optional -----------------------------------------------------------------
 ; (Activate corresponding inclusions in file drupal-org.make)
-;dependencies[] = kwstatsgoogle   ;Web statistics - Google
-;dependencies[] = kwstatspiwik    ;Web statistics - Piwik
+;Google analytics
+;dependencies[] = kwstatsgoogle
+;Piwik
+;dependencies[] = kwstatspiwik    
 ;dependencies[] = kagenda
 ;dependencies[] = knews
 
 ;--- Themes -------------------------------------------------------------------
 ; (Activate corresponding inclusions in file drupal-org.make)
 ;dependencies[] = kbootstrap
-;dependencies[] = foundation
+;dependencies[] = kfoundation
 ;dependencies[] = komega
 
 
