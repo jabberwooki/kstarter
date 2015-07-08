@@ -46,3 +46,9 @@ $FIND themes/custom/${NEWNAME}/${NEWNAME}.info -exec $SED s/"Kstarter ${STARTER^
 
 # Rename the theme in the profile's info file.
 $FIND . -maxdepth 1 -name "*.info" -exec $SED s/kstarter_theme/$NEWNAME/g -i {} \;
+
+# If Bootstrap, replace 'kstarter' with profile name in kbootstrap.strongarm.inc.
+if [ $STARTER == 'bootstrap' ]
+then
+  $FIND modules/features/kbootstrap/kbootstrap.strongarm.inc -exec $SED s/"kstarter_bootstrap"/$NEWNAME/g -i {} \;
+fi

@@ -22,11 +22,11 @@ projects[module_filter][version] = "2.0"
 ;projects[coffee][version] = "2.0"
 
 ;projects[node_export][subdir] = contrib
-;projects[node_export][version] = "7.x-3.0"
+;projects[node_export][version] = "3.0"
 
 ;projects[replicate][subdir] = contrib
-;projects[replicate][version] = "7.x-1.1"
+;projects[replicate][version] = "1.1"
 
 ;projects[replicate_ui][subdir] = contrib
-;projects[replicate_ui][version] = "7.x-1.4"
+;projects[replicate_ui][version] = "1.4"
 

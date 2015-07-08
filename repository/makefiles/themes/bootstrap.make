@@ -8,10 +8,10 @@ projects[bootstrap][subdir] = contrib
 
 ;=== Contrib modules ==========================================================
 projects[bootstrap_fieldgroup][subdir] = contrib
-projects[bootstrap_fieldgroup][version] = "7.x-1.1"
+projects[bootstrap_fieldgroup][version] = "1.1"
 
 projects[ds_bootstrap_layouts][subdir] = contrib
-projects[ds_bootstrap_layouts][version] = "7.x-1.1"
+projects[ds_bootstrap_layouts][version] = "1.1"
 
 projects[views_bootstrap][subdir] = contrib
-projects[views_bootstrap][version] = "7.x-3.1"
+projects[views_bootstrap][version] = "3.1"

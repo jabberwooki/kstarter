@@ -66,7 +66,7 @@ function kstarter_install_tasks(&$install_state) {
  * context manage them.
  */
 function _kstarter_install_theme() {
-  $settings = _mda_get_settings();
+  $settings = _kstarter_get_settings();
   
   // Set default theme.
   $theme_name = $settings['default_theme'];

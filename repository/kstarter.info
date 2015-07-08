@@ -71,18 +71,59 @@ dependencies[] = views
 
 ;--- Optional -----------------------------------------------------------------
 ; (Activate corresponding projects in file drupal-org.make)
+;dependencies[] = addressfield
 ;dependencies[] = bean  
 ;dependencies[] = block_class
 ;dependencies[] = boxes
+;dependencies[] = custom_search
 ;dependencies[] = date_popup
 ;dependencies[] = date_views
+;dependencies[] = draggableviews
 ;dependencies[] = email
+;dependencies[] = email_registration
+;dependencies[] = entityform
 ;dependencies[] = entityreference
 ;dependencies[] = field_collection
+;dependencies[] = field_formatter_class
+;dependencies[] = field_formatter_settings
 ;dependencies[] = filefield_sources
 ;dependencies[] = migrate_extras
+;dependencies[] = password_policy
+;dependencies[] = phone
+;dependencies[] = print
+;dependencies[] = registration
+;dependencies[] = rules
+;dependencies[] = views_autocomplete_filters
 ;dependencies[] = views_bulk_operations
+;dependencies[] = views_isotope
 ;dependencies[] = views_slideshow
+;dependencies[] = views_ui_basic
+
+;=== Mapping ==================================================================
+;dependencies[] = geocoder
+;dependencies[] = geofield
+;dependencies[] = leaflet
+
+;dependencies[] = gmap
+;dependencies[] = addressfield_autocomplete
+;dependencies[] = geocomplete
+
+;=== Netlinking ===============================================================
+;dependencies[] = sharethis
+;dependencies[] = addthis
+;dependencies[] = addtoany
+
+;=== Newsletter ===============================================================
+;dependencies[] = mailchimp
+
+;=== Scald and media related modules ==========================================
+;dependencies[] = scald
+;dependencies[] = scald_file
+;dependencies[] = scald_dailymotion
+;dependencies[] = scald_vimeo
+;dependencies[] = scald_soundcloud
+;dependencies[] = scald_gallery
+;dependencies[] = filefield_sources_scald
 
 ;=== Kstarter features ========================================================
 ; (Activate corresponding inclusions in file drupal-org.make)
@@ -94,15 +135,17 @@ dependencies[] = kcontextes
 
 ;--- Optional -----------------------------------------------------------------
 ; (Activate corresponding inclusions in file drupal-org.make)
-;dependencies[] = kwstatsgoogle   ;Web statistics - Google
-;dependencies[] = kwstatspiwik    ;Web statistics - Piwik
+;Google analytics
+;dependencies[] = kwstatsgoogle
+;Piwik
+;dependencies[] = kwstatspiwik    
 ;dependencies[] = kagenda
 ;dependencies[] = knews
 
 ;--- Themes -------------------------------------------------------------------
 ; (Activate corresponding inclusions in file drupal-org.make)
 ;dependencies[] = kbootstrap
-;dependencies[] = foundation
+;dependencies[] = kfoundation
 ;dependencies[] = komega
 
 
