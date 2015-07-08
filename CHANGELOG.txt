@@ -1,3 +1,9 @@
+Kstarter 1.1 - 2015-07-08
+-------------------------
+- Contrib modules added to .info and .make files.
+- theme-rename.sh script updated.
+
+
 Kstarter 1.0. - 2015-03-17
 ---------------------------
 - README.txt file updated.
