@@ -27,7 +27,7 @@ cd /your/desired/location/<your-project>/
 ./scripts/profile-rename.sh <your-profile-name>
 
 5) Rename the starter theme
-./scripts/profile-rename.sh <chosen-starter-theme> <your-theme-name>
+./scripts/theme-rename.sh <chosen-starter-theme> <your-theme-name>
 
 6) Edit profiles files to set up your distribution
 - Edit the <your-profile>.info file, adjust settings info, and comment/uncomment dependencies as desired.
