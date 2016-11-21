@@ -2,31 +2,40 @@ api = "2"
 core = "7.x"
 
 ;=== Must have modules ==============================================
+projects[coffee][subdir] = contrib
+;projects[coffee][version] = ""
+
 projects[devel][subdir] = contrib
-projects[devel][version] = "1.5"
+;projects[devel][version] = ""
 
 projects[diff][subdir] = contrib
-projects[diff][version] = "3.2"
+;projects[diff][version] = ""
 
 projects[features_diff][subdir] = contrib
-projects[features_diff][version] = "1.0-beta1"
+;projects[features_diff][version] = ""
 
 projects[filter_perms][subdir] = contrib
-projects[filter_perms][version] = "1.0"
+;projects[filter_perms][version] = ""
 
 projects[module_filter][subdir] = contrib
-projects[module_filter][version] = "2.0"
+;projects[module_filter][version] = ""
+
+projects[uuid_features][subdir] = contrib
+;projects[uuid_features][version] = ""
 
 ;=== Goodies ========================================================
-;projects[coffee][subdir] = contrib
-;projects[coffee][version] = "2.0"
+;projects[masquerade][subdir] = contrib
+;projects[masquerade][version] = ""
 
 ;projects[node_export][subdir] = contrib
-;projects[node_export][version] = "3.0"
+;projects[node_export][version] = ""
 
 ;projects[replicate][subdir] = contrib
-;projects[replicate][version] = "1.1"
+;projects[replicate][version] = ""
 
 ;projects[replicate_ui][subdir] = contrib
-;projects[replicate_ui][version] = "1.4"
+;projects[replicate_ui][version] = ""
+
+;projects[reroute_email][subdir] = contrib
+;projects[reroute_email][version] = ""
 
