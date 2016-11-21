@@ -2,23 +2,25 @@ api = 2
 core = 7.x
 
 ;=== Modules ==================================================================
-projects[globalredirect][subdir] = contrib
-projects[globalredirect][version] = "1.5"
+; Global Redirect n'est plus nécessaire depuis le patch redirect-n905914-227.patch du module Redirect
+; (cf. https://www.drupal.org/node/905914)
+;projects[globalredirect][subdir] = contrib
+;projects[globalredirect][version] = ""
 
 projects[metatag][subdir] = contrib
-projects[metatag][version] = "1.4"
+;projects[metatag][version] = ""
 
 projects[page_title][subdir] = contrib
-projects[page_title][version] = "2.7"
+;projects[page_title][version] = ""
 
 projects[pathauto][subdir] = contrib
-projects[pathauto][version] = "1.2"
+;projects[pathauto][version] = ""
 
 projects[redirect][subdir] = contrib
-projects[redirect][version] = "1.0-rc1"
+;projects[redirect][version] = ""
 
 projects[transliteration][subdir] = contrib
-projects[transliteration][version] = "3.2"
+;projects[transliteration][version] = ""
 
 projects[xmlsitemap][subdir] = contrib
-projects[xmlsitemap][version] = "2.2"
+;projects[xmlsitemap][version] = ""
